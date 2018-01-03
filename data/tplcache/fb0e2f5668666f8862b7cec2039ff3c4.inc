@@ -1,0 +1,1 @@
+<li style="width: 50%;"> <a href="view.php?aid=[field:id/]" title="[field:title/]"> <img src="[field:picname/]" alt="[field:title/]"> <span>[field:title/]</span> </a> </li>

@@ -1,0 +1,2 @@
+INSERT INTO `dede_diyform1` VALUES('1','0','1350000000','标题测试','内容测试');
+INSERT INTO `dede_diyform1` VALUES('2','0','135000000','手机端标题测试','手机端内容测试');

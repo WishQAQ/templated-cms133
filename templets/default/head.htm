@@ -1,0 +1,41 @@
+<div class="fixed"> <a href="/a/liuyan/" title="留言" class="book"></a> <a href="javascript:;" title="二维码" class="codepic"></a> <a href="javascript:;" title="返回顶部" class="backup"></a>
+  <div> <img src="/skin/public/index.png" class="code"  /> </div>
+</div>
+<div class="top_bg">
+  <div class="top">
+    <p class="top_left">全国统一服务热线：<span>{dede:global.cfg_dianhua/}</span></p>
+    <div class="top_right">
+      <div class="search">
+        <form  name="formsearch" action="{dede:global.cfg_cmsurl/}/plus/search.php">
+          <input type="text" class="text pngFix" name="q" value="请输入关键词" onfocus="this.value=''" onblur="if(!value){value=defaultValue}"  />
+          <div class="select pngFix">
+            <select id="nochongf" style="display: none" name="searchtype">
+              <option value=2 >产品展示</option>
+              <option value=12 >新闻中心</option>
+              <option value=11 >成功案例</option>
+            </select>
+          </div>
+          <input type="submit" title="搜索" class="btn pngFix" value=""/>
+        </form>
+        <script type="text/javascript" src="/skin/public/js/jQselect.js"></script>
+        <script type=text/javascript>
+                    jQuery(document).ready(function() {
+                        jQuery("#nochongf").selectbox();
+                    });
+                </script>
+      </div>
+      <a href="/a/liuyan/" class="top_msg" title="留言反馈">留言反馈</a> <a href="/a/lianxi/" class="top_contact" title="联系我们">联系我们</a> </div>
+  </div>
+</div>
+<div class="nav-box">
+  <div class="nav-bg">
+    <div class="nav-center"> <a href="/" title="{dede:global.cfg_webname/}" class="logo"><img src="/skin/public/images/logo.png" alt="{dede:global.cfg_webname/}"/></a>
+      <ul class="nav">
+        <li> <a href="/" title="网站首页" {dede:field name=typeid runphp="yes"}(@me=="")? @me="   class='on'  ":@me="";{/dede:field}> <span>网站首页</span></a> </li>
+		{dede:channel row="10" type="top" col="1" currentstyle="<li><a href='~typelink~' ~rel~ class='on'><span>~typename~</span></a></li>" }
+		<li> <a href="[field:typeurl/]" title="[field:typename/]"> <span>[field:typename/]</span></a> </li>
+		{/dede:channel}
+      </ul>
+    </div>
+  </div>
+</div>

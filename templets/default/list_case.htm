@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Author" content="xunmoban.com" />
+<title>{dede:field.title/}-{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="" />
+<meta name="description" content=""/>
+<link rel="stylesheet" type="text/css" href="/skin/public/css/child_page.css" />
+<link rel="stylesheet" type="text/css" href="/skin/public/css/child_form.css" />
+<link rel="stylesheet" type="text/css" href="/skin/public/css/child_vip.css" />
+<link rel="stylesheet" type="text/css" href="/skin/public/css/child_msg.css" />
+<link rel="stylesheet" type="text/css" href="/skin/public/css/child_cart.css" />
+<link rel="stylesheet" type="text/css" href="/skin/public/css/child_atm.css" />
+<link rel="stylesheet" type="text/css" href="/skin/public/css/master.css" />
+<script type="text/javascript" src="/skin/public/js/jquery.js"></script>
+<script type="text/javascript" src="/skin/public/js/banner.js"></script>
+<script type="text/javascript" src="/skin/public/js/nav.js"></script>
+<script type="text/javascript" src="/skin/public/js/form.js"></script>
+<script type="text/javascript" src="/skin/public/js/passwordStrength-min.js"></script>
+<script type="text/javascript" src="/skin/public/js/humane.js"></script>
+<script type="text/javascript" src="/skin/public/js/child_atm.js"></script>
+<script type="text/javascript" src="/skin/public/js/zx.js"></script>
+<!--[if IE 6]>
+<script type="text/javascript" src="js/png.js"></script>
+<script>DD_belatedPNG.fix('div,img,span,li,a,a:hover,dd,p,input,select')</script>
+<![endif]-->
+</head>
+<body>
+{dede:include filename="head.htm"/}
+<div class="child_top"></div>
+<script type="text/javascript">
+    var atmdateC = [{"pic_path":"/skin/public/images/about.jpg","href":"","title":"banner2","url":"/skin/public/images/about.jpg"}];			
+    $(document).ready(function(){
+        var bannerShow = new Atm();
+        bannerShow.randomPic(atmdateC,".child_top","1600","250");
+    });
+</script>
+<div class="marquee_bg1">
+  <div class="marquee_bg2">
+    <div class="marquee">
+      <p>站内公告：</p>
+      <marquee scrollamount="3">
+      官方域名：WWW.DEDECMS.COM！
+      </marquee>
+    </div>
+  </div>
+</div>
+<div class="subpage"> <img src="/skin/public/images/subleft.jpg" class="sub-left" alt=""/> <img src="/skin/public/images/sub_right.jpg" class="sub-right" alt=""/>
+  <div class="sub">
+    <div class="left">
+      <div class="con1-left">
+        <p class="left-title1">产品中心分类</p>
+        <a href="javascript:;" title="" class="class_up"></a>
+        <div class="con1_class">
+          <ul>
+            {dede:channel row="10" typeid="2" type="son" col="1" currentstyle="<li class='on'><a href='~typelink~' ~rel~>~typename~</a></li>" }
+			<li><a href="[field:typeurl/]" title="[field:typename/]">[field:typename/]</a></li>
+			{/dede:channel}
+          </ul>
+        </div>
+        <a href="javascript:;" title="" class="class_down"></a> </div>
+      <div class="left-contact">
+        <div class="left-title">
+          <p>联系我们<span>CONTACT</span></p>
+        </div>
+        <div class="left-con"> 地址：{dede:global.cfg_dizhi/}<br />
+          热线：{dede:global.cfg_dianhua/}<br />
+          邮编：000000<br />
+          邮箱：6009709@qq.com </div>
+        <h1>{dede:global.cfg_dianhua/}</h1>
+      </div>
+    </div>
+    <div class="right">
+      <div class="right-title"> <span class="right-name">{dede:field name='typename'/}</span>
+        <p>当前位置：{dede:field name='position'/}</p>
+      </div>
+      <div class="right-con">
+        <ul class="news_list3">
+          {dede:list pagesize="5"}
+		  <li>
+            <p> <a href="[field:arcurl/]" title="[field:title/]">[field:title/]</a> <span>[field:pubdate function="MyDate('Y-m-d',@me)"/]</span> </p>
+            <div> <a href="[field:arcurl/]" title="[field:title/]"><img src="[field:picname/]" width="107" height="78" alt="[field:title/]" /></a>[field:infos/]... </div>
+          </li>
+		  {/dede:list}
+        </ul>
+        <div class='paging'>{dede:pagelist istitem="index,pre,next,end," listsize="5"/}</div>
+      </div>
+    </div>
+  </div>
+</div>
+{dede:include filename="footer.htm"/}
+</body>
+</html>

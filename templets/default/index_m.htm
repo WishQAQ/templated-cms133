@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="telephone=no" name="format-detection" />
+<meta name="Author" content="xunmoban.com" />
+<title>{dede:global.cfg_webname/}移动版</title>
+<meta name="description" content="{dede:global.cfg_description/}" />
+<meta name="keywords" content="{dede:global.cfg_keywords/}" />
+<link rel="stylesheet" type="text/css" href="/m/skin/css/master.css" />
+<link rel="stylesheet" type="text/css" href="/m/skin/css/child_vip.css" />
+<script type="text/javascript" src="/m/skin/js/jquery.js"></script>
+<script type="text/javascript" src="/m/skin/js/nav.js"></script>
+<script type="text/javascript" src="/m/skin/js/cart_icon.js"></script>
+<script type="text/javascript" src="/m/skin/js/form.js"></script>
+<script type="text/javascript" src="/m/skin/js/humane.js"></script>
+<script type="text/javascript" src="/m/skin/js/zx.js"></script>
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=1.4"></script>
+<style>
+        .topbg{
+            background:#a00000        }
+        .foot{
+        background:#a00000        }
+        .nav{
+        background:#3a000a        }
+    </style>
+</head>
+<body>
+{dede:include filename="head_m.htm"/}
+<div class="allpage">
+  <div class="black-fixed iconfont">&#xe60f;</div>
+  <div class="header">
+    <div class="head"> <a href="index.php" title="" class="logo"> <img src="/m/skin/images/logo.png" alt=""/> </a>
+      <div class="nav-btn iconfont">&#xe605;</div>
+      <img src="/m/skin/images/topnav.png" class="top-nav" alt=""/> </div>
+  </div>
+  <div class="content">
+    <div class="big-pic big-pic2">
+      <div class="big-pic-in">
+        <div class="pic-list"> <img src="/m/skin/images/banner1.jpg" width="100%" /> <img src="/m/skin/images/banner2.jpg" width="100%" /> </div>
+      </div>
+      <div class="slide-dot"> <span class="slide-dot-cur"></span><span ></span> </div>
+    </div>
+    <h3 class="title-border1"></h3>
+    <div class="title"> {dede:type typeid='2'}<span>[field:typename/]</span>{/dede:type}
+      <p>PRODUCT Class</p>
+    </div>
+    <ul class="inav">
+      {dede:channel typeid='2' type='son' row='3'}
+	  <li> <a href="list.php?tid=[field:id/]" title="[field:typename/]"> <img src="/m/skin/images/chanpin/chanpin[field:global name=autoindex/].jpg" alt="[field:typename/]"/> <span>[field:typename/]</span> </a> </li>
+	  {/dede:channel}
+    </ul>
+    <div class="title1">
+      <div class="title1-name">
+        <h3>N</h3>
+        <p>{dede:type typeid='12'}<span>[field:typename/]</span>EWS</p>
+      </div>
+      <a href="list.php?tid=[field:id/]" title="更多">>>更多</a> {/dede:type}</div>
+    
+	{dede:arclist row=2 typeid='12' titlelen=60 }
+	<div class="inews"> 
+	<a href="view.php?aid=[field:id/]" class="news-img" title="[field:title/]"><img src="[field:picname/]" alt="[field:title/]"/></a>
+      <p>[field:pubdate function="MyDate('Y-m-d',@me)"/]</p>
+      <h3><a href="view.php?aid=[field:id/]" title="[field:title/]">[field:title/]</a></h3>
+      <div>[field:infos/]...</div>
+    </div>
+	{/dede:arclist}
+    <div class="title2">{dede:type typeid='2'} <span>[field:typename/]</span>{/dede:type}
+      <p>PRODUCT</p>
+    </div>
+    <ul class="ipro">
+      {dede:arclist row=4 typeid='2' titlelen=60 }
+	  <li> <a href="view.php?aid=[field:id/]" title="[field:title/]"> <img src="[field:picname/]" alt="[field:title/]"/> <span>[field:title/]</span> </a> </li>
+	  {/dede:arclist}
+    </ul>
+    {dede:type typeid='2'}<a href="list.php?tid=[field:id/]" title="点击查看更多" class="imore">点击查看更多</a>{/dede:type}
+    <div class="icase">
+      <div class="icase-top"> 
+	  {dede:arclist row=3 typeid='11' titlelen=60 }
+	  <a href="" title="[field:title/]"><img src="[field:picname/]" alt="[field:title/]" width="175" height="131"/></a>
+	  {/dede:arclist} 
+	  </div>
+    </div>
+    <p class="support"> 技术支持：<a href="http://www.xunmoban.com/" target="_blank" title="寻模板">寻模板</a></p>
+  </div>
+  {dede:include filename="footer_m.htm"/}
+</div>
+</body>
+</html>

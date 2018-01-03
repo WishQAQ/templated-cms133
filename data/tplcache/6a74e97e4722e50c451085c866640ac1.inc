@@ -1,0 +1,1 @@
+<li class="[field:global name=autoindex runphp='yes']@me=(@me==0)?'on':'';[/field:global]"><img width="95" height="71" src="[field:imgsrc/]" alt="" /></li>

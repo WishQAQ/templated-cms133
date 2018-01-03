@@ -1,0 +1,45 @@
+<?php
+$z[0]=Array("global","",301,327);
+$z[0][4]['name']="cfg_webname";
+$z[1]=Array("global","",1038,1066);
+$z[1][4]['name']="cfg_mobileurl";
+$z[2]=Array("global","",1545,1573);
+$z[2][4]['name']="cfg_mobileurl";
+$z[3]=Array("include","",2449,2484);
+$z[3][4]['filename']="head.htm";
+$z[4]=Array("channel","\r\n        <li><a href=\"[field:typeurl/]\" title=\"[field:typename/]\">[field:typename/]</a></li>\r\n        ",3426,3589);
+$z[4][4]['row']="10";
+$z[4][4]['typeid']="2";
+$z[4][4]['type']="son";
+$z[5]=Array("arclist","\r\n    <li>\r\n      <div class=\"con1_img\"> <img src=\"[field:picname/]\" width=\"229\" height=\"172\" alt=\"[field:title/]\"/> <span class=\"zoom\"></span> </div>\r\n      <p><a href=\"[field:arcurl/]\" title=\"[field:title/]\">[field:title/]</a></p>\r\n    </li>\r\n    ",3715,4051);
+$z[5][4]['typeid']="2";
+$z[5][4]['row']="6";
+$z[5][4]['titlelen']="20";
+$z[5][4]['infolen']="150";
+$z[5][4]['orderby']="pubdate";
+$z[6]=Array("global","",4242,4266);
+$z[6][4]['name']="cfg_dizhi";
+$z[7]=Array("global","",4291,4317);
+$z[7][4]['name']="cfg_dianhua";
+$z[8]=Array("global","",4406,4432);
+$z[8][4]['name']="cfg_dianhua";
+$z[9]=Array("type","<span>[field:typename/]</span>\r\n          <p>bout us</p>\r\n        </div>\r\n        <a href=\"[field:typeurl/]\" title=\"更多\">>>更多</a> ",4584,4755);
+$z[9][4]['typeid']="1";
+$z[10]=Array("type","<span>[field:typename/]</span>\r\n        <p>EWS</p>\r\n      </div>\r\n      <a href=\"[field:typeurl/]\" title=\"更多\">>>更多</a> ",5521,5683);
+$z[10][4]['typeid']="12";
+$z[11]=Array("arclist","\r\n      <li class=\"news-li[field:global name=autoindex/]\"> <a href=\"[field:arcurl/]\" title=\"[field:title/]\"><img src=\"[field:picname/]\" width=\"200\" height=\"150\" alt=\"[field:title/]\"/></a>\r\n        <div class=\"news-right\"> <span>[field:pubdate function=\"MyDate('Y/m/d',@me)\"/]</span>\r\n          <h2><a href=\"[field:arcurl/]\" title=\"\">[field:title/]</a></h2>\r\n          <div>[field:infos/]...</div>\r\n        </div>\r\n      </li>\r\n      ",5725,6245);
+$z[11][4]['typeid']="12";
+$z[11][4]['row']="6";
+$z[11][4]['titlelen']="20";
+$z[11][4]['infolen']="150";
+$z[11][4]['orderby']="pubdate";
+$z[12]=Array("arclist","\r\n		  <a class=\"con4-img4\" href=\"[field:arcurl/]\" title=\"[field:title/]\"> <img src=\"[field:picname/]\" width=\"224\" height=\"172\" alt=\"[field:title/]\"/> <span class=\"con4-span\"> <span class=\"con4-title\">[field:title/]</span> <span class=\"con4-con\">[field:infos/]...</span> </span> </a>\r\n		  ",7444,7819);
+$z[12][4]['typeid']="11";
+$z[12][4]['row']="4";
+$z[12][4]['titlelen']="20";
+$z[12][4]['infolen']="150";
+$z[12][4]['orderby']="pubdate";
+$z[13]=Array("include","",8002,8039);
+$z[13][4]['filename']="footer.htm";
+
+?>

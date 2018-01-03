@@ -1,0 +1,46 @@
+<?php
+$z[0]=Array("field","",298,317);
+$z[0][4]['name']="title";
+$z[1]=Array("global","",318,344);
+$z[1][4]['name']="cfg_webname";
+$z[2]=Array("include","",1785,1820);
+$z[2][4]['filename']="head.htm";
+$z[3]=Array("channel","\r\n			<li><a href=\"[field:typeurl/]\" title=\"[field:typename/]\">[field:typename/]</a></li>\r\n			",2845,3084);
+$z[3][4]['row']="10";
+$z[3][4]['typeid']="2";
+$z[3][4]['type']="son";
+$z[3][4]['col']="1";
+$z[3][4]['currentstyle']="<li class='on'><a href='~typelink~' ~rel~>~typename~</a></li>";
+$z[4]=Array("global","",3366,3390);
+$z[4][4]['name']="cfg_dizhi";
+$z[5]=Array("global","",3417,3443);
+$z[5][4]['name']="cfg_dianhua";
+$z[6]=Array("global","",3541,3567);
+$z[6][4]['name']="cfg_dianhua";
+$z[7]=Array("field","",3682,3711);
+$z[7][4]['name']="typename";
+$z[8]=Array("field","",3746,3775);
+$z[8][4]['name']="position";
+$z[9]=Array("field","",3868,3887);
+$z[9][4]['name']="title";
+$z[10]=Array("field","",3920,3972);
+$z[10][4]['name']="pubdate";
+$z[10][4]['function']="MyDate('Y/m/d',@me)";
+$z[11]=Array("field","",3998,4025);
+$z[11][4]['name']="phpurl";
+$z[12]=Array("field","",4049,4072);
+$z[12][4]['name']="id";
+$z[13]=Array("field","",4077,4101);
+$z[13][4]['name']="mid";
+$z[14]=Array("productimagelist","\r\n			<li><img width=\"555\" height=\"416\" src=\"[field:imgsrc/]\" alt=\"\" /></li>\r\n			    ",4461,4592);
+$z[15]=Array("productimagelist","\r\n            <li class=\"[field:global name=autoindex runphp='yes']@me=(@me==0)?'on':'';[/field:global]\"><img width=\"95\" height=\"71\" src=\"[field:imgsrc/]\" alt=\"\" /></li>\r\n			",4730,4951);
+$z[16]=Array("field","",5111,5129);
+$z[16][4]['name']="body";
+$z[17]=Array("prenext","",5192,5217);
+$z[17][4]['get']="pre";
+$z[18]=Array("prenext","",5250,5276);
+$z[18][4]['get']="next";
+$z[19]=Array("include","",5470,5507);
+$z[19][4]['filename']="footer.htm";
+
+?>
